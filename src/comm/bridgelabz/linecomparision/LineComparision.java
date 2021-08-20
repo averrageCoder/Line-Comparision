@@ -21,10 +21,14 @@ public class LineComparision {
 		length1 = calculate_length(x1, x2, y1, y2);
 		length2 = calculate_length(p1, p2, q1, q2);
 		
-		if(length1.equals(length2))
+		int result = length1.compareTo(length2);
+		
+		if(result==0)
 			System.out.println("Both the lines are equal!");
+		else if(result>0)
+			System.out.println("Line 1 is greater than Line 2!");
 		else
-			System.out.println("Both the lines are NOT equal!");
+			System.out.println("Line 2 is greater than Line 1!");
 		
 	}
 
